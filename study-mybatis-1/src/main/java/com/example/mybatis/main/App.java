@@ -49,8 +49,14 @@ public class App {
 
         // 定义Mapper接口调用
         StudyMybatisMapper studyMybatisMapper = sqlSession.getMapper(StudyMybatisMapper.class);
-        MybatisDemoDTO demo = studyMybatisMapper.getById(1);
-        System.out.println(demo);
+        System.out.println(System.currentTimeMillis());
+        MybatisDemoDTO demo1 = studyMybatisMapper.getById(1);
+        System.out.println(System.currentTimeMillis());
+        MybatisDemoDTO demo2 = studyMybatisMapper.getById(2);
+        System.out.println(System.currentTimeMillis());
+        MybatisDemoDTO demo3 = studyMybatisMapper.getById(1);
+        System.out.println(System.currentTimeMillis());
+        System.out.println(demo1);
         List<MybatisDemoDTO> demoList = studyMybatisMapper.getAll();
         System.out.println(demoList);
 

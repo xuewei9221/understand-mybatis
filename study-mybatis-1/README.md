@@ -1,4 +1,4 @@
-# study-mybatis-1
+# MyBatis脱离Spring运行
 
 
 ## 一、前言
